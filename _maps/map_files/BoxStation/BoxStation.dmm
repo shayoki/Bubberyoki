@@ -2443,6 +2443,9 @@
 /area/station/security/processing)
 "aqh" = (
 /obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "aqi" = (
@@ -3325,7 +3328,9 @@
 /turf/open/floor/iron/solarpanel/airless,
 /area/station/solars/port/aft)
 "aua" = (
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/junction/flip{
+	dir = 1
+	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "aud" = (
@@ -6191,6 +6196,9 @@
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
@@ -22719,6 +22727,12 @@
 /obj/item/holosign_creator/atmos,
 /turf/open/floor/iron,
 /area/station/engineering/atmos/hfr_room)
+"bJY" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/hallway/primary/fore)
 "bKb" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/machinery/door/airlock/research,
@@ -26312,10 +26326,9 @@
 /turf/open/floor/carpet,
 /area/station/commons/vacant_room/office)
 "bZp" = (
-/obj/structure/falsewall/reinforced,
 /obj/item/fakeartefact,
 /obj/structure/safe/floor,
-/turf/open/floor/plating,
+/turf/closed/wall/r_wall,
 /area/station/maintenance/starboard/fore)
 "bZr" = (
 /obj/machinery/status_display/evac,
@@ -39224,6 +39237,10 @@
 	name = "Brig Desk"
 	},
 /obj/item/storage/fancy/donut_box,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "briggate";
+	name = "Security Shutters"
+	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "gDB" = (
@@ -41209,6 +41226,9 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "hTn" = (
@@ -43509,6 +43529,12 @@
 /obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
+"jjM" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/station/security/detectives_office)
 "jjO" = (
 /obj/effect/turf_decal/trimline/dark_blue/filled/corner{
 	dir = 4
@@ -47332,13 +47358,13 @@
 /turf/open/floor/iron,
 /area/station/science/robotics/lab)
 "lzE" = (
-/obj/structure/disposalpipe/sorting/mail{
-	dir = 1
-	},
 /obj/effect/mapping_helpers/mail_sorting/service/law_office,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "lzS" = (
@@ -51095,6 +51121,9 @@
 	dir = 1
 	},
 /obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "nTU" = (
@@ -51912,6 +51941,9 @@
 	},
 /obj/structure/sign/warning/electric_shock/directional/north,
 /obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "owD" = (
@@ -53353,6 +53385,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
+"pvW" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/hallway/primary/fore)
 "pwd" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/railing/corner/end/flip{
@@ -56977,6 +57016,9 @@
 "rCT" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "rDL" = (
@@ -61158,6 +61200,9 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "uof" = (
@@ -61666,10 +61711,6 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "briggate";
-	name = "Security Shutters"
-	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "uDN" = (
@@ -61728,6 +61769,10 @@
 /area/station/security/prison)
 "uGe" = (
 /obj/effect/mapping_helpers/burnt_floor,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal/bin,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "uGf" = (
@@ -65717,6 +65762,8 @@
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor,
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plating,
 /area/station/security/prison/rec)
 "xbF" = (
@@ -93107,7 +93154,7 @@ agj
 agj
 agj
 agj
-arP
+aph
 aqh
 wYB
 dUq
@@ -93364,7 +93411,7 @@ vxN
 vad
 aqo
 atm
-arP
+aph
 aqh
 wYB
 avR
@@ -93621,7 +93668,7 @@ akG
 fwV
 mVz
 ask
-arP
+aph
 aqh
 wYB
 aUf
@@ -93878,7 +93925,7 @@ anC
 vad
 bXN
 iXk
-arP
+aph
 aqh
 wYB
 dtc
@@ -93929,7 +93976,7 @@ btB
 buM
 bwi
 bmr
-aMm
+aJq
 ova
 prY
 bCs
@@ -94135,12 +94182,12 @@ mtG
 agj
 agj
 agj
-arP
+aph
 unU
 wYB
 wYB
 wYB
-wYB
+jjM
 wYB
 dDX
 wYB
@@ -94393,7 +94440,7 @@ vad
 mWI
 oVe
 urb
-hEP
+pvW
 uzJ
 wYB
 qnX
@@ -94907,7 +94954,7 @@ vad
 fqg
 aHR
 urb
-hEP
+pvW
 bgU
 wYB
 gyW
@@ -95421,7 +95468,7 @@ oAx
 iwL
 kMX
 urb
-hEP
+pvW
 bgU
 wYB
 apY
@@ -95935,7 +95982,7 @@ fOh
 iiQ
 akN
 fZs
-hEP
+pvW
 hEP
 qSr
 aCd
@@ -96449,7 +96496,7 @@ pnU
 utj
 snm
 ehM
-bwB
+bJY
 vnl
 dbK
 dbK
