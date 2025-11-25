@@ -1008,6 +1008,20 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/structure/table,
+/obj/effect/spawner/random/engineering/tool{
+	pixel_y = 6;
+	pixel_x = 7
+	},
+/obj/item/poster/random_official,
+/obj/effect/spawner/random/engineering/tool{
+	pixel_x = -7
+	},
+/obj/effect/spawner/random/engineering/tool{
+	pixel_x = 16;
+	pixel_y = -3
+	},
+/obj/item/bot_assembly/ed209,
 /turf/open/floor/iron/dark,
 /area/station/security/mechbay)
 "ahl" = (
@@ -40054,6 +40068,7 @@
 /obj/effect/turf_decal/trimline/dark/warning{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/security/execution/transfer)
 "dYx" = (
@@ -45320,12 +45335,8 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/miningdock)
 "gzQ" = (
-/obj/structure/table,
-/obj/effect/spawner/random/engineering/tool{
-	pixel_x = 16;
-	pixel_y = -3
-	},
-/obj/item/bot_assembly/ed209,
+/obj/machinery/flasher/portable,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/station/security/mechbay)
 "gzV" = (
@@ -63624,16 +63635,9 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "oMt" = (
-/obj/structure/table,
-/obj/effect/spawner/random/engineering/tool{
-	pixel_y = 6;
-	pixel_x = 7
-	},
-/obj/item/poster/random_official,
 /obj/machinery/airalarm/directional/south,
-/obj/effect/spawner/random/engineering/tool{
-	pixel_x = -7
-	},
+/obj/machinery/flasher/portable,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/station/security/mechbay)
 "oMz" = (
@@ -68545,6 +68549,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/security/processing)
 "qWG" = (
