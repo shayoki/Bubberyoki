@@ -25,6 +25,9 @@
 /modular_zubbers/code/datums/components/nanites.dm @arturlang
 /modular_zubbers/code/modules/nanites @arturlang
 
+# Gavla
+/_maps @shayoki
+
 # Ozzo
 /.github @nevimer
 /cfg @nevimer
