@@ -43,8 +43,13 @@
 	var/area/my_area = null
 	///looping sound datum for our fire alarm siren.
 	var/datum/looping_sound/firealarm/soundloop
+	///looping sounds datum for our fire alarm chirp.
+	var/datum/looping_sound/firealarmchirp/soundloopchirp
+
 
 	// Set by wires, not meant for subtypes
+	/// If FALSE, the fire alarm can never chirp().
+	VAR_FINAL/can_chirp = TRUE
 	/// If FALSE, the fire alarm can never be reset().
 	VAR_FINAL/can_reset = TRUE
 	/// If FALSE, the fire alarm can never be alarm()ed.

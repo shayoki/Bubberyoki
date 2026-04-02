@@ -169,6 +169,13 @@
 	mid_length = 2.4 SECONDS
 	volume = 30
 
+/datum/looping_sound/firealarmchirp
+	mid_sounds = list(
+		'sound/machines/fire_alarm/FireAlarm5.ogg',
+	)
+	mid_length = 300 SECONDS
+	volume = 40
+
 /datum/looping_sound/gravgen/kinesis
 	volume = 20
 	falloff_distance = 2

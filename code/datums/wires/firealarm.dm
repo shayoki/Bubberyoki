@@ -4,6 +4,7 @@
 
 /datum/wires/firealarm/New(atom/holder)
 	wires = list(
+		WIRE_FIRE_CHIRP, // triggers alarm chirp
 		WIRE_FIRE_DETECT, // toggles whether it can activate automatically
 		WIRE_FIRE_RESET, // resets fire alarm
 		WIRE_FIRE_TRIGGER, // triggers fire alarm
@@ -24,6 +25,8 @@
 /datum/wires/firealarm/on_pulse(wire, mob/living/user)
 	var/obj/machinery/firealarm/alarm = holder
 	switch(wire)
+		if(WIRE_FIRE_CHIRP)
+			alarm.chirp(user, silent = TRUE)
 		if(WIRE_FIRE_DETECT)
 			alarm.toggle_fire_detect(user, silent = TRUE)
 		if(WIRE_FIRE_TRIGGER)
@@ -50,6 +53,9 @@
 		if(WIRE_FIRE_TRIGGER)
 			// does not reset() or alarm() - it's now stuck on or off
 			alarm.can_trigger = !mend
+		if(WIRE_FIRE_CHIRP)
+			// does not reset() or alarm() - it's now stuck on or off
+			alarm.can_chirp = !mend
 		if(WIRE_FIRE_RESET)
 			// does not reset() or alarm() - it's now stuck on or off
 			alarm.can_reset = !mend
